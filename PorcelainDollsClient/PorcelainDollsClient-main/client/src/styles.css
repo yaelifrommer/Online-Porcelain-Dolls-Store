@@ -1,0 +1,360 @@
+.background-container {
+    background: url('Back.jpeg') no-repeat center center;
+    background-size: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(249, 249, 249, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a3f5f;
+    padding: 10px;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.title {
+    color: #2a3f5f;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px; 
+}
+
+.get-started-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 3;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: 2px solid #007BFF;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.add-new-product-btn {
+    background-color: #32a852;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(50,168,82,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-new-product-btn:hover {
+    background-color: #27943f;
+    box-shadow: 0 2px 12px rgba(39,148,63,0.3);
+}
+
+.response-message {
+    color: #d9534f;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: linear-gradient(to right, #eff0f4, #e2e2e2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    background: linear-gradient(to right, #e2e2e2, #eff0f4);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.product-thumbnail {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.icon-edit, .icon-delete {
+    font-size: 20px;
+    color: #007BFF;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.icon-edit:hover, .icon-delete:hover {
+    color: #0056b3;
+}
+
+/* Input field and button styling */
+.input-field, .file-input, .btn {
+    padding: 10px 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Specific styling for input fields */
+.input-field {
+    border-color: #007BFF;
+}
+
+/* Specific styling for file input fields */
+.file-input {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+}
+
+/* Flex container styling */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Space between flex items */
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+/* Cart container styling */
+.cart-container {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.cart-container:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Cart product image styling */
+.cart-product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Cart details styling */
+.cart-details {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Icon styling for quantity adjustments */
+.icon-plus, .icon-minus {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.icon-plus:hover, .icon-minus:hover {
+    color: #0056b3;
+}
+
+/* Order window item styling */
+.order-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.order-item:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Order products container styling */
+.order-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Individual order product styling */
+.order-product {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Order product image styling */
+.order-product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Order header styling */
+.order-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Porcelain dolls images styling for the navbar */
+.porcelain-dolls-images {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.porcelain-dolls-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.porcelain-dolls-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Enlarged image styling for modal view */
+.enlarged-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+/* Overlay styling for modal background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Close button styling for modal */
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.close-btn:hover {
+    background: #c82333;
+}
